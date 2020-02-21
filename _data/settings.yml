@@ -1,6 +1,6 @@
 basic_settings:
-  site_title: Index
-  site_tagline: A minimal, fixed sidebar grid portfolio Jekyll theme.
+  site_title: cufbom
+  site_tagline: Pixel art and traditional.
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -9,14 +9,14 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Projects'
-      url: '/'
+      #    - title: 'Projects'
+      #      url: '/'
     - title: 'Blog'
       url: '/blog/'
-    - title: 'About'
-      url: '/about'
     - title: 'Contact'
       url: '/contact'
+    - title: 'About'
+      url: '/about'
 
 grid_settings:
   overlay_opacity: 0.1
@@ -30,8 +30,8 @@ contact_settings:
 
 social_settings:
   facebook_url: ''
-  twitter_url: ''
-  instagram_url: ''
+  twitter_url: 'https://twitter.com/cufbom'
+  instagram_url: 'https://instagram.com/cufbom'
   snapchat_url: ''
   youtube_url: ''
   google-plus_url: ''
@@ -45,7 +45,7 @@ social_settings:
   tumblr_url: ''
   dribbble_url: ''
   behance_url: ''
-  deviantart_url: ''
+  deviantart_url: 'https://deviantart.com/cufbom'
   github_url: ''
   reddit_url: ''
   flickr_url: ''
