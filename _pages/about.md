@@ -1,11 +1,35 @@
 ---
-layout: page
-title: About
-image: '/images/pages/1.jpg'
+title: About Index
+subtitle: Index is a minimal, fixed sidebar grid portfolio Jekyll theme. Perfect for designers, artists, photographers and developers to use for their portfolio website.
+description: Index is a minimal, fixed sidebar grid portfolio Jekyll theme.
+featured_image: /images/demo/demo-landscape.jpg
 ---
 
-You love minimalism, want to be productive focusing only on the important things and want to take jekyll to the next level, Nubia is designed for you. Nubia focus on showing your content in a clean and simple way, focus on images, typography, and white space.
+![](/images/demo/demo-landscape.jpg)
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## Features
 
-Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing ius ne, ne facer euripidis est. Pro mundi nostrum suavitate et.
+Index is packed with powerful features to showcase your work:
+
+* Beautiful, minimal design
+* Fixed sidebar menu
+* Two-column masonry grid layout
+* Responsive – works perfectly on all devices
+* Portfolio post type
+* Blog with pagination
+* Sleek Ajax navigation and page transitions
+* Unique 'gallery' feature for image grids and carousels
+* Built-in contact form with Formspree integration
+* Full markdown support and code highlighting
+* Social media icons
+* Fast page rendering
+* Built with SEO best practices in mind
+* Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
+* Works with GitHub Pages
+* Updated and supported by the developers
+
+## Get Index
+
+Index is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $29.
+
+<a href="https://jekyllthemes.io/theme/index-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>

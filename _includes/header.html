@@ -1,46 +1,55 @@
-<header class='c-header'>
-  <div class='o-grid'>
+<header class="header">
 
-    <div class='o-grid__col o-grid__col--3-4-s o-grid__col--4-4-m'>
-      <div class='c-logo'>
-        {% if site.logo %}
-          <a href='{{ site.baseurl }}/'>
-            <img class='c-logo__img' src='{{ site.logo }}' alt='{{ site.title }}'>
-          </a>
-        {% else %}
-          <a class='c-logo__link' href='{{ site.baseurl }}/'>{{ site.title }}</a>
-        {% endif %}
-      </div>
-    </div>
+	<div class="header__content">
 
-    <div class='o-grid__col o-grid__col--1-4-s o-grid__col--3-4-l o-grid__col--full'>
-      <div class='c-off-canvas-content js-off-canvas-content'>
-        <label class='js-off-canvas-toggle c-off-canvas-toggle c-off-canvas-toggle--close'>
-          <span class='c-off-canvas-toggle__icon'></span>
-        </label>
+		{% if site.data.settings.header_settings.logo_image %}
+		<a href="/" class="header__logo">
+			<img src="{{ site.data.settings.header_settings.logo_image }}" class="header__logo__img">
+		</a>
+		{% else %}
+		<a href="/" class="header__title">
+			{{ site.data.settings.basic_settings.site_title }}
+		</a>
+		{% endif %}
 
-        <div class='o-grid'>
-          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--3-4-l o-grid__col--full'>
-            <nav class='c-nav-wrap'>
-              <ul class='c-nav o-plain-list'>
-                {% include navigation.html %}
-                <li class='c-nav__item'>
-                  <a class='toggle-search-button js-search-toggle' href='#' aria-label='Search'>
-                    <span class='c-nav__icon' data-icon='ei-search' data-size='s'></span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
+		<h1 class="header__tagline">{{ site.data.settings.basic_settings.site_tagline }}</h1>
 
-      <label class='js-off-canvas-toggle c-off-canvas-toggle' aria-label='Toggle navigation'>
-        <span class='c-off-canvas-toggle__icon'></span>
-      </label>
-    </div>
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					{% for item in site.data.settings.menu_settings.menu_items %}
+					<li class="menu__list__item">
+						<a href="{{ item.url }}" class="menu__list__item__link">{{ item.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
 
-  </div>
+		<div class="projects-menu">
+			<ul class="menu__list">
+				{% for project in site.projects reversed %}
+				<li class="menu__list__item">
+					<a href="{{ project.url }}" class="menu__list__item__link">{{ project.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div class="header__lower">
+
+			{% include socials.html %}
+
+			<div class="footer__copyright">
+				<span>© {{ 'now' | date: "%Y" }} {{ site.data.settings.basic_settings.site_title }}</span>
+				<a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a>
+			</div>
+
+		</div>
+
+	</div>
+
 </header>
-
-{% include search-form.html %}
