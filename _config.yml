@@ -1,5 +1,6 @@
 site: Index Jekyll Theme
-baseurl: "portfolio/"
+baseurl: "/portfolio/"
+url: "https://cufbom.github.io/portfolio/"
 collections:
   pages:
     output: true
