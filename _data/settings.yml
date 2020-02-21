@@ -19,8 +19,8 @@ menu_settings:
       url: '/contact'
 
 grid_settings:
-  overlay_opacity: 0.8
-  grid_spacing: 20
+  overlay_opacity: 0.1
+  grid_spacing: 10
 
 contact_settings:
   form_action: 'https://formspree.io/cufbom@gmail.com'
